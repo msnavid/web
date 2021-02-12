@@ -80,12 +80,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "M Samran Navid"
+  name             : "Samran Navid"
   avatar           : "profile.png"
   bio              : "PhD"
   location         : "Nijmegen, NL"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=muhammad+samran+navid"
   googlescholar    : "https://scholar.google.com/citations?user=4PAw5YkAAAAJ&hl=en"
   email            :
   researchgate     :  "https://www.researchgate.net/profile/Muhammad_Samran_Navid" # example: "https://www.researchgate.net/profile/yourprofile"
@@ -255,7 +255,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Amsterdam # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
