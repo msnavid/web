@@ -483,3 +483,31 @@ a.reversefootnote {
   color: $danger-color;
   font-weight: bold;
 }
+
+
+/* zoom */
+.zoom{
+  /* default button */
+
+  &:hover {
+    transform: scale(1.25);
+  }
+}
+
+/* other icons*/
+
+.other-icons {
+  .fa {
+    color: #000;
+  }
+
+  .fa-file-alt {
+    color: $supplementaryfile-color;
+  }
+  
+  .fa-file-pdf {
+    color: $pdf-color;
+  }
+
+
+}
