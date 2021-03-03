@@ -1,0 +1,30 @@
+---
+---
+<!-- {{reference | replace_first: 'Navid, M.S.', '<b>Navid, M.S.</b>' | replace_first: 'Navid*, M.S', '<b>Navid*, M.S.</b>' | replace_first: 'Asiaee Taheri, A.', '<b>Asiaee Taheri, A.</b>', | replace_first: 'Asiaee T., A.', '<b>Asiaee T., A.</b>' | replace_first: 'Asiaee T.*, A.', '<b>Asiaee T.*, A.</b>'}} -->
+{{reference | replace_first: 'Navid, M. S.', '<b>Navid, M. S.</b>' | replace_first: '*', '<sup>*</sup>' | replace_first: '#', '<sup>#</sup>'}}
+
+<br>
+
+<div class="social-icons other-icons">
+  {% if entry.doi %}
+  <a href="http://doi.org/{{entry.doi}}" target="_blank"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i></a>
+  {% elsif entry.url %}
+  <a href="{{entry.url}}" target="_blank"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i></a>
+  {% endif %}
+
+  {% if code %}
+  <a href="http://doi.org/{{entry.code}}" target="_blank"><i class="fas fa-fw fa-code zoom" aria-hidden="true"></i></a>
+  {% endif %}
+
+  {% if github %}
+  <a href="{{github}}" target="_blank"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
+  {% endif %}
+
+  {% if link %}
+  <a href="{{link}}" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a>
+  {% endif %}
+
+  {% if links['supplementary.pdf'] %}
+  <a href="{{links['supplementary.pdf']}}" target="_blank"><i class="fas fa-fw fa-file-alt zoom" aria-hidden="true"></i></a>
+  {% endif %}
+</div>
