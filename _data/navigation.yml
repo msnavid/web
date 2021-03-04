@@ -15,8 +15,8 @@ main:
 #  - title: "Portfolio"
 #    url: /portfolio/
 
-  - title: "blog"
-    url: /blog/
+  - title: "posts"
+    url: /posts/
 
   - title: "cv"
     url: /cv/

@@ -146,6 +146,26 @@ exclude:
   - package.json
   - tmp
   - vendor
+
+  # 2021-03-04 Samran: exclude as these are either not required now,
+  # or redundant for my case for clean generation of site
+  - _publications
+  - _portfolio
+  - _posts
+  - _talks
+  - _teaching
+  - _pages/archive-layout-with-content.md
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/year-archive.html
+  - markdown_generator
+  - talkmap
 keep_files:
   - .git
   - .svn
@@ -174,18 +194,21 @@ kramdown:
 
 
 # Collections
+# 2021-03-04 Samran: set outputs to false from true.
+# e.g. these are shown as headings wiht pages under them in sitemap.
+# currently not filled and not used, so turning them off.
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
