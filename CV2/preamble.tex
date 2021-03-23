@@ -1,0 +1,51 @@
+% --- \documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{geometry}
+% --- \usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome5}
+
+% --- page size and margins
+\geometry{a4paper,
+left = 20mm,
+right = 20mm,
+top = 20mm,
+bottom = 20mm,
+headsep = 7mm,
+heightrounded}
+
+% --- set font
+\setmainfont{MYRIADPRO}[
+Extension = .OTF
+,UprightFont    = *-COND
+,ItalicFont     = *-CONDIT
+,BoldFont       = *-BOLDCOND
+,BoldItalicFont = *-BOLDCONDIT
+]
+
+% --- color definitions
+\definecolor{color_section}{RGB}{20, 113, 159}
+\definecolor{color_headings}{RGB}{9, 74, 103}
+\definecolor{color_orcid}{RGB}{165, 205, 57}
+\definecolor{color_linkedin}{RGB}{0, 123, 182}
+
+% --- header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{M Samran Navid, PhD}
+\fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% --- section/heading style
+\titleformat{\section}[hang]{\color{color_section}\large\bfseries}{\thesection}{1em}{}[\color{black}\vspace{-5pt}\rule{\linewidth}{1pt}]
+\titlespacing*{\section}{0pt}{.5ex plus .1ex minus .1ex}{.1ex plus .1ex minus .1ex}
+
+% --- remove title chunk
+\AtBeginDocument{\let\maketitle\relax}

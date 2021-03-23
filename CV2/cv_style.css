@@ -1,0 +1,25 @@
+/* Main text is monserrat*/
+body {
+  font-family: "Myriad Pro";
+  src: url('/Users/msnavid/Library/Fonts/MYRIADPRO-REGULAR.OTF');
+  color: blue;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  /* font-family: "Myriad Pro";
+  src: url('/Users/msnavid/Library/Fonts/MYRIADPRO-REGULAR.OTF'); */
+  color: red;
+}
+
+hr {
+ display: block;
+ margin-top: 0.5em;
+ margin-bottom: 0.5em;
+ margin-left: auto;
+ margin-right: auto;
+ border: none;
+ background-color: #fc0;
+ height: 0.1em;
+}

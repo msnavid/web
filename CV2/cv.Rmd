@@ -1,0 +1,81 @@
+---
+title: "CV_SamranNavid"
+author: "msnavid"
+date: "Sys.time()"
+output:
+  pdf_document:
+    latex_engine: lualatex
+    includes:
+      in_header: preamble.tex
+    
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# library(icons)
+library(kableExtra)
+
+source ('cv_printing_functions.r')
+
+
+
+```
+
+# Curriculum Vitae \hfill (Last update: `r format(Sys.time(), '%B %d, %Y')`)
+
+\begin{center}
+\begin{tabular}{p{55mm} p{45mm} p{57mm}}
+% Line 1
+\faEnvelope \hspace{1mm} samranasghar@gmail.com &
+\faGithub \hspace{1mm} github.com/msnavid &
+\hfill \textcolor{color_orcid}{\faOrcid}  \hspace{1mm} orcid.org/0000-0002-2849-874X \\
+
+% Line 2
+\faLink \hspace{1mm} msnavid.com &
+\textcolor{color_linkedin}{\faLinkedin} \hspace{1mm} linkedin.com/in/msnavid \\
+
+% Line 3
+\faPhone \hspace{1mm} +31 (0) 616 084 645 \\
+\end{tabular}
+\end{center}
+
+``` {r personal_info}
+# icons::fontawesome("rocket", style = "solid")
+# 
+# personal_info <- personal_info ()
+# 
+# knitr::kable(personal_info, escape = F)
+
+CV <- create_CV_object()
+
+
+```
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+---
+
+\newpage
+
+# Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+---
+
+<hr>
+
