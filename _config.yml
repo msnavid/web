@@ -164,6 +164,7 @@ exclude:
   - _pages/talks.html
   - _pages/teaching.html
   - _pages/year-archive.html
+  - _pages/posts.html
   - CV
   - CV2
   - markdown_generator
