@@ -171,6 +171,7 @@ exclude:
   - CV2
   - markdown_generator
   - talkmap
+  - guide_for_uploading_the_site
 keep_files:
   - .git
   - .svn

@@ -1,0 +1,3 @@
+replace localhost links to actual website msnavid.com link everywhere: use 'bundle exec jekyll build' : https://talk.jekyllrb.com/t/how-can-i-replace-localhost-in-my-site-folder/2467/2
+
+how to upload the static _site, as the plugins don't work for bibliography... conisder that the repo and gh-pages branch is already made in the _site folder, so only git add, commit and push is required: https://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200
