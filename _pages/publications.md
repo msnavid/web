@@ -5,8 +5,9 @@ permalink: /publications/
 author_profile: true
 ---
 
-<!-- <sup>*</sup> Equal authorship statement
-<br> -->
+<!-- <sup>*</sup> Equal contribution -->
+\* Equal contribution
+<br>
 <sup>#</sup> Corresponding author
 
 ## Preprints
